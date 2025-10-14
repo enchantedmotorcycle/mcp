@@ -25,7 +25,7 @@ from .const import DOMAIN
 _LOGGER = logging.getLogger(__name__)
 
 UPDATE_INTERVAL = datetime.timedelta(minutes=30)
-TIMEOUT = 10
+TIMEOUT = 1000
 
 TokenManager = Callable[[], Awaitable[str]]
 
