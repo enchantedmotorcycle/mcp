@@ -5,6 +5,7 @@
   "config_flow": true,
   "dependencies": ["application_credentials"],
   "documentation": "https://www.home-assistant.io/integrations/mcp",
+  "integration_type": "service",
   "iot_class": "local_polling",
   "quality_scale": "silver",
   "requirements": ["mcp==1.14.1"]
