@@ -1,7 +1,7 @@
 {
   "domain": "mcp",
-  "name": "Model Context Protocol",
-  "codeowners": ["@allenporter"],
+  "name": "Model Context Protocol - custom",
+  "codeowners": ["@jc"],
   "config_flow": true,
   "dependencies": ["application_credentials"],
   "documentation": "https://www.home-assistant.io/integrations/mcp",
