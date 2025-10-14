@@ -1,5 +1,5 @@
 {
-  "domain": "mcp",
+  "domain": "mcp_custom",
   "name": "Model Context Protocol - custom",
   "codeowners": ["@jc"],
   "config_flow": true,
