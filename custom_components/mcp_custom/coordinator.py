@@ -25,7 +25,7 @@ from .const import DOMAIN
 _LOGGER = logging.getLogger(__name__)
 
 UPDATE_INTERVAL = datetime.timedelta(minutes=30)
-TIMEOUT = 1000
+TIMEOUT = 1000.0
 
 TokenManager = Callable[[], Awaitable[str]]
 
@@ -88,7 +88,7 @@ class ModelContextProtocolTool(llm.Tool):
                         tool_input.tool_name, tool_input.tool_args
                     )
         except TimeoutError as error:
-            _LOGGER.debug("Timeout when calling tool: %s", error)
+            _LOGGER.debug("Timeout when calling tool - test: %s", error)
             raise HomeAssistantError(f"Timeout when calling tool: {error}") from error
         except httpx.HTTPStatusError as error:
             _LOGGER.debug("Error when calling tool: %s", error)
